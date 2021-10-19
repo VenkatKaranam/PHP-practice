@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+</head>
+<style type="text/css">
+form{
+	margin-top: 100px;
+}
+input{
+	width: 300px;
+	padding: 10px;
+	margin-top: 10px;
+	outline: none;
+}
+.button{
+	border: none;
+	background-color: skyblue;
+}
+label{
+	font-size: 20px;
+}
+</style>
+<body>
+	<center>
+		<div id="quitmessage" style="display: none;"><h3>You quit the grade calculator</h3></div>
+		<div id="form" style="display:">
+		<form name=form method="POST"  onsubmit="return validate();"> //returns to validate javascript function
+			<label>Student Name:</label>
+			<input type="text" name="name"><br>
+			<label>current marks:</label>
+			<input type="number" name="marks"><br>
+			<label>Number of absence:</label>
+			<input type="number" name="absence"><br>
+			<label>Number of late assignments:</label>
+			<input type="number" name="late"><br>
+			<input class="button" type="submit" name="s" value="Submit"> <br><br>
+		</form>
+		<button class="button" onclick="quit()">Quit</button><br><br>
+		<label>YOUR GRADE IS:</label><p id="result" style="color:green;font-size: 30px;"></p>
+		</div>
+	</center>
+</body>
+<script type="text/javascript">
+	function quit() {
+		document.getElementById('form').style.display="none";
+		document.getElementById('quitmessage').style.display="inline-block";
+	}
+	function validate() {
+		var marks=parseInt(document.form.marks.value);
+		var absence=parseInt(document.form.absence.value);
+		var assign=parseInt(document.form.late.value);
+		if (assign==0) {
+			if (absence==0) {
+				marks=marks+(5/100)*marks;
+		    }
+		 else if (absence==1 || absence==2) {
+		 	marks=marks+(2.5/100)*marks;
+		 	}
+		 }
+		 if(absence>=4){
+		 	document.getElementById('result').innerHTML="fail";
+		 	return false;
+		 }
+		if (marks<=100 && marks>=80) {
+	    	document.getElementById('result').innerHTML="A";
+	    	return false;
+	    }
+	    else if(marks<80 && marks>=70) {
+	    	document.getElementById('result').innerHTML="B";
+	    	return false;
+	    }
+
+	    else if(marks<70 && marks>=60) {
+	    	document.getElementById('result').innerHTML="C";
+	    	return false;
+	    }
+	    else if(marks<60 && marks>=50){
+	    	document.getElementById('result').innerHTML="d";
+	    	return false;
+	    }
+	    else if(marks<50){
+	    	document.getElementById('result').innerHTML="fail";
+	    	return false;
+	    }
+
+
+	   return false;
+}
+</script>
+</html>

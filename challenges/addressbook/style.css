@@ -1,0 +1,30 @@
+/* appling some style to the fome */
+.container{
+	display: flex;
+}
+.title{
+	color: lightgreen;
+	font-size: 30px;
+}
+	input{
+		width: 300px;
+		padding: 10px;
+		margin: 20px;
+	}
+	.button{
+		text-decoration: none;
+		padding: 10px;
+		background-color: lightgreen;
+		border: none;
+		color: black;
+		margin: 10px;
+		font-size: 15px;
+		font-weight: bold;
+		display: block;
+		width: 200px;
+		margin: 20px;
+	}
+	.check
+	{
+		width: 50px;
+	}

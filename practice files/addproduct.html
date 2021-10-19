@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add Product</title>
+</head>
+<style type="text/css">
+/*appling few styles to the form */
+form{
+	margin-top: 100px;
+}
+h1{
+	color: green;
+}
+input{
+	width: 300px;
+	padding: 10px;
+	margin-top: 10px;
+	outline: none;
+}
+.button{
+	border: none;
+	background-color: lightgreen;
+}
+</style>
+<body>
+	<center>
+		<!-- form data sent to addproductbackend.php through POST method when user submitted the form-->
+		<form method="POST" action="addproductbackend.php"> 
+			<h1>Add Product Form</h1><br>
+			<!--for all input fields name is assigned to retrive the product manager input in php page -->
+			<input type="text" name="name" placeholder="Product Name"><br><br>
+			<input type="text" name="rp" placeholder="Retailer Price"><br><br>
+			<input type="text" name="cp" placeholder="Consumer price"><br><br>
+			<input type="text" name="stock" placeholder="Stock"><br><br>
+			<input class="button" type="Submit" name="" value="ADD">
+
+		</form>
+	</center>
+</body>
+</html>

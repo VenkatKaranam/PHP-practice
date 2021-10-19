@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- external css file link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Form</title>
+<body>
+	<center>
+		<div class="container">
+	</div>
+	<h2>Insert data form</h2>
+	 <!--sending input values to insertdata.php through method POST -->	
+		<form name="form" method="POST" action="insertdata.php" >
+			<!--name is given to input tag to get value by name in php file -->
+			<input class="input_text" type="text" name="id" placeholder="Enter Book Id "><br>
+			<input class="input_text" type="text" name="name" placeholder="Enter Book  name"><br>
+			<button class="button">Insert Data</button><br><br>
+		</form>
+		<div>
+		<!-- anchor tag to reach home page-->
+		<a href="index.html" class="button">Home Page</a>
+		</div>
+	</center>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+	box-sizing: border-box;
+	margin: 0;
+}
+.container{
+	width: 700px;
+	text-align: left;
+}
+
+.icon{
+	background-color: skyblue ;
+	padding: 10px;
+	border-radius: 50px;
+}
+.label{
+	width: 150px;
+	height: auto;
+}
+label{
+	font-size: 30px;
+	font-weight: bold;
+	color:skyblue ;
+	position: relative;
+	bottom: 15px;
+}
+.input_text{
+	width: 700px;
+	padding: 10px;
+	margin-top:30px ;
+	margin-right: 0;
+}
+.buttonsearch{
+	padding: 10px;
+	background-color:skyblue ;
+	border: none;
+	color: white;
+	position: absolute;
+	margin-top: 30px;
+}
+h1{
+	text-align: left;
+	background-color: lightgray;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px){
+	.input_text{
+		width: 200px;	
+	}
+	.icon{
+		width: 20px;
+		height: 20px;
+	}
+	label{
+		font-size: 15px;
+	}
+	h1{
+		font-size: 25px;
+	}
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<style type="text/css">
+	/* appling some style to the fome */
+	input{
+		width: 600px;
+		padding: 10px;
+		margin: 0;
+	}
+	button{
+		padding: 10px;
+		background-color: lightgreen;
+		border: none;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	</style>
+<body>
+	<center>
+		<div class="container">
+			<div class="label"></div>
+		<h1>Search Customer</h1><br>
+	</div>
+	 <!--sending input values to search.php through method POST -->	
+		<form name="form" method="POST" action="search.php" >
+			<input class="input_text" type="text" name="keyword" placeholder="Enter Customer name ">
+			<button class="button">Search</button>
+		</form>
+		</div>
+	</center>
+</body>
+</html>

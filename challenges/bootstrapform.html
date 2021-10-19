@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<!-- links belong to bootstrap 3 -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- link of external validation javascript file-->
+  <script type="text/javascript" src="validatescript.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Form</h1>
+		<!-- form is starts here form data is sent to php file through method='POST'-->
+	<form name="form" method="POST" action="formbackend.php" class="form-horizontal" onsubmit="return validate()">
+		<!-- fisrtname label and input field-->
+		<div class="form-group">
+			<div class="col-sm-4">
+			<label for="uname">First Name</label>
+			<input type="text" class="form-control" id="fn" name="fn" placeholder="Enter Your First Name" required="">
+			</div>
+		</div>
+		<!-- lastname label and input field-->
+		<div class="form-group">
+		<div class="col-sm-4">
+			<label for="uname">Last Name</label>
+			<input type="text" class="form-control" id="ln" name="ln" placeholder="Enter Your First Name" required="">
+		</div>
+	</div>
+	<!-- Higher qualfication label and input-->
+		<div class="form-group">
+		<div class="col-xs-4">
+			<label for="uname">Highest Qualification</label>
+			<input type="text" class="form-control" id="hq" name="hq" placeholder="Enter Your First Name" required="">
+		</div>
+	   </div>
+
+	   <!-- CNIC label and input field-->
+	   <div class="form-group">
+		<div class="col-xs-4">
+			<label for="uname">CNIC</label>
+			<input type="text" class="form-control" id="cnic" name="cnic" placeholder="XXXXX-XXXXXXX-X" required="">
+		</div>
+	   </div>
+	   <!-- Experience label and input field-->
+	    <div class="form-group">
+		<div class="col-xs-4">
+			<label for="uname">Experience</label>
+			<input type="text" class="form-control" name="ex" id="ex" placeholder="In Years" required="">
+		</div>
+	   </div>
+	   <!-- programming languages  label and check box fields-->
+	    <div class="form-group">
+		<div class="col-xs-4">
+			<label for="uname">Expertise in programming language</label>
+		<div class="form-group">
+	   <div class="checkbox-inline">
+	  	<input type="checkbox" name="op1" id="op1" value="c">C
+	  </div>
+	   <div class="checkbox-inline">
+	  	<input type="checkbox" name="op2" id="op2" value="php">PHP
+	  </div>
+	   <div class="checkbox-inline">
+	  	<input type="checkbox" name="op3" id="op3" value="java">Java
+	  </div>
+	  <div class="checkbox-inline">
+	  	<input type="checkbox" name="op4" id="op4" value="python">Python
+	  </div>
+	  </div>
+	  </div>
+	   </div>
+
+<!-- Gender label and radio buttin fields-->
+	   <div class="form-group">
+		<div class="col-xs-4">
+			<label for="uname">Gender</label>
+		<div class="form-group">
+	     <div class="radio-inline">
+	  	<input type="radio" name="g" id="m" value="M">Male
+	  </div>
+	   <div class="radio-inline">
+	  	<input type="radio" name="g" id="f" value="F">Female
+	  </div>
+	</div>
+</div>
+</div>
+<!-- select field for province-->
+<div class="form-group">
+<label for="uname">Province Of Domcilie</label>
+		</div>
+
+			<div class="form-group">
+				<div class="col-xs-4">
+			<select class="form-control" id="select1" name="pd">
+				<option>select</option>
+				<option>origin</option>
+				<option>choice</option>
+				<option>operation of law</option>
+			</select>
+		</div>
+	   </div>
+	   
+	   <!-- select field for nation-->
+	   <div class="form-group">
+<label for="uname">Nationality</label>
+		</div>
+
+			<div class="form-group"> <div class="col-xs-4"> <select
+			class="form-control" id="select2" name="na">
+			<option>select</option> 
+			<option>Asia</option>
+			<option>Africa</option>
+			 <option>USA</option>
+			<option>Pakistan</option>
+			 </select> </div> </div> <div
+			class="form-group"> <div class="col-xs-4"> 
+				<label for="uname">cover letter</label>
+				 <textarea class="form-control" rows="3" name="c" id="cover" placeholder="Enter Your
+			First Name" required=""> </textarea> </div> </div> <div
+			class="form-group"> <div class="col-xs-4"> 
+				<!--submit button-->
+				<input type="submit" class="btn btn-primary" name="" value="submit"> </div> </div> </div>
+			</form> 
+		</div>
+
+</body>
+</html>

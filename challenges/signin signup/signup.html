@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center>
+		<form method="POST" action="createaccount.php"> <!--sending user email and password to login.php through method POST -->
+			<h1>SignUp Form</h1><br>
+			<input type="mail" name="user" placeholder="Enter Username"><br><br>
+			<input type="password" name="pass" placeholder="Enter password"><br><br>
+			<input type="password" name="verifypass" placeholder="Enter Verify password"><br><br>
+			<input type="password" name="code" placeholder="Enter Secret Code"><br><br>
+			<input class="button" type="Submit" name="submit" value="Login">
+			<input class="button" type="reset" name="clear" value="Reset">
+
+		</form>
+	</center>
+
+</body>
+</html>

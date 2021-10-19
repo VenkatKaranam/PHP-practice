@@ -1,0 +1,48 @@
+
+/* applying style to form */
+input{
+		width: 300px;
+		padding: 10px;
+		margin: 20px;
+	}
+	.button{
+		padding: 10px;
+		background-color: lightgreen;
+		border: none;
+		color: black;
+		margin: 10px;
+		font-size: 15px;
+		font-weight: bold;
+		width: 200px;
+		margin: 20px;
+	}
+
+	/* applying style to table and data */
+	table,tr,td,th {
+		border: none;
+		text-align: center;
+		padding: 20px;
+		font-weight: bold;
+		
+	}
+	table{
+		border-top: 2px solid gray;
+	}
+	td,th{
+		border-bottom: 2px solid gray;
+	}
+	/* styles for action buttons */
+	a{
+		text-decoration: none;
+		text-transform: uppercase;
+		color: white;
+		padding: 7px 10px;
+		border-radius: 5px;
+		background-color: skyblue;
+	}
+	.blockbtn{
+		background-color: red;
+	}
+	.activebtn{
+		background-color: lightgreen;
+	}

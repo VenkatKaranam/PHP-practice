@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- external css file link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Form</title>
+		
+<body>
+	<center>
+		<div class="container">
+	</div>
+	<h2>Update data form</h2>
+	 <!--sending input values to updatedata.php through method POST -->	
+		<form name="form" method="POST" action="updatedata.php" >
+				<input class="input_text" type="text" name="fn" placeholder="Enter First name " required=""><br>
+			<input class="input_text" type="text" name="ln" placeholder="Enter Last name" required=""><br>
+			<input class="input_text" type="text" name="address" placeholder="Enter Address"><br>
+			<input class="number" type="text" name="phn" placeholder="Enter Phone Number"><br>
+			<input class="mail" type="text" name="mail" placeholder="Enter Email"><br>
+			<input class="mail" type="text" name="alt" placeholder="Enter Alternative"><br>
+			<button class="button">UPDATE</button>
+			<input class="button" type="reset" name="" value="Reset"><br><br>
+		</form>
+		<div>
+		<!-- anchor tag to reach home page -->
+		<a href="index.html" class="button">Home Page</a>
+		</div>
+	</center>
+</body>
+</html>

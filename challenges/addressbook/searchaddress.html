@@ -1,0 +1,27 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Search</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center>
+			<form name="form" method="POST" action="searchdata.php" >
+				<!--radio input tags name as search by and values as database column name -->
+				<input class="check" type="radio" name="searchby" value="firstname">By Firstname <br>
+				<input class="check" type="radio" name="searchby" value="lastname">By Lastname <br>
+				<input class="check" type="radio" name="searchby" value="phonenumber">By Phone Number <br>
+				<!--input field to enter respective input value -->
+				<input type="text" name="input" placeholder="Enter respective input"> 
+			<button class="button"> Search</button><br><br>
+			<input class="button" type="reset" name="" value="Reset">
+		</form>
+	</center>
+
+</body>
+</html>
+<?php 
+$database=mysqli_connect("localhost", "root","","address_book") OR die('Server Error no connection'.mysqli_connect_error())
+
+ ?>

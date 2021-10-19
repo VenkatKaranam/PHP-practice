@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>control the interface</title>
+</head>
+<style type="text/css">
+body{
+	width: 400px;
+
+}
+	h3{
+		background-color: blue;
+		color: white;
+		padding: 30px;
+		width: 200px ;
+	}
+	button{
+		padding: 10px;
+		border: 2px;
+		border-color: black;
+		border-radius: 10px;
+		text-decoration: none;
+		width: 100px;
+		margin-top: 20px;
+		display: inline-block;
+	}
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+</style>
+<body><center>
+	<h3>Control Interface</h3>
+	<div>
+		<form method="POST" action="forward.php">  
+			<button href="forward.php">Forward</button>
+		</form>
+		
+		<div class="container">
+			<form method="POST" action="left.php">
+			<button href="left.php" class="a">Left</button>
+			</form>
+			<form method="POST" action="stop.php">
+				<button href="stop.php"class="a">Stop</button>
+				</form>
+			<form method="POST" action="right.php"><button href="right.php"class="a">Right</button>
+				</form>
+		</div>
+		<form method="POST" action="backward.php">
+		<button href="backward.php" class="a">Backward</button>
+		</form>
+	</div>
+	</center>
+
+</body>
+</html>

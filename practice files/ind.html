@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+</head>
+<style type="text/css">
+form{
+	margin-top: 100px;
+}
+input{
+	width: 300px;
+	padding: 10px;
+	margin-top: 10px;
+	outline: none;
+}
+.button{
+	border: none;
+	background-color: skyblue;
+}
+label{
+	font-size: 20px;
+}
+</style>
+<body>
+	<center>
+
+
+		<form method="POST" action="product.php"> //the below input values will be sent to product.php through POST method
+			<label>Username:</label>
+			<input type="text" name="username"><br>
+			<label>product name:</label>
+			<input type="text" name="productname"><br>
+			<label>product price:</label>
+			<input type="text" name="productprice"><br>
+			<label>phone number:</label>
+			<input type="text" name="phonenumber"><br>
+
+			<input class="button" type="submit" name="" value="Submit"> 
+
+		</form>
+	</center>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="formstyle.css"><!-- external Css link -->
+</head>
+<body>
+	<center>
+		<form method="POST" action="newpersonform.php"> <!--sending user email and password to newpersonform.php through method POST -->
+			<!--input is taken from user and name is assigned to every input tag -->
+			<h1>Person Add Form</h1><br>
+			<label>Name: </label><input type="text" name="name" ><br><br>
+			<label>Salary: </label><input type="text" name="salary"><br><br>
+			<label>Birth date:</label><input type="date" name="dob"><br><br>
+			<label>Gender:</label>
+			<input class="r" type="radio" name="gender" value="M">Male
+			<input class="r" type="radio" name="gender" value="F">Female <br>
+			<label>Wilayat:</label><select name="w">
+				<option>Nizwa</option>
+				<option>izki</option>
+				<option>Bahla</option>
+				</select><br>
+			
+			<input class="button" type="Submit" name="" value="Add">
+
+		</form>
+	</center>
+
+</body>
+</html>

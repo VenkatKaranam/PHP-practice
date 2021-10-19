@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<!-- external css file link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center>
+
+	<h2>Login</h2>
+
+
+	 <!--sending input values to loginbackend.php through method POST -->	
+		<form name="form" method="POST" action="loginbackend.php" >
+
+			<!--name is given to input tag to get value by name in php file -->
+			<input type="text" name="un" placeholder="Username " required=""><br>
+			<input type="password" name="pswd" placeholder="Password" required=""><br>
+
+			<button class="button">Login</button><br><br>
+		</form>
+	</center>
+
+</body>
+</html>

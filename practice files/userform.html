@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>User Form</title>
+</head>
+<style type="text/css">
+form{
+	margin-top: 100px;
+}
+input,select{
+	width: 300px;
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 20px;
+	outline: none;
+}
+.button{
+	border: none;
+	background-color: skyblue;
+}
+</style>
+<body><center>
+	<h1>User Form</h1>
+	<form method="POST" action="task.php">  <!-- form data sent through POST method to task.php -->
+		<select name="selected_option" id="select" required="">
+			<option disabled="" selected="">select</option>
+			<option>View All Doctors
+			</option>
+			<option>View based on Fee</option>
+		</select><br><br>
+		<input style="display: none;" id="feefield" type="text" name="fee" placeholder="ENTER FEE" ><br><br>
+		<input class="button" type="submit" name="" value="Submit">
+	</form>
+</center>
+</body>
+<script type="text/javascript"> //js to enable the text field if option is fee based
+	var option=document.getElementById('select');
+	option.oninput = function() {
+  	if(this.value=="View based on Fee")
+  	{
+  		document.getElementById('feefield').style.display="inline-block"
+  	}
+}
+</script>
+</html>
